@@ -15,6 +15,7 @@ app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
+    console.log("Request received at start");
 });
 app.use('/git', git);
 

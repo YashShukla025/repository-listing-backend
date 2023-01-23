@@ -43,6 +43,7 @@ router.get('/repos/:user/:page', async function (req, res) {
 })
 
 router.get('/getAllRepos/:user', async function (req, res) {
+    console.log("Received request");
     
     const user = req.params.user;
     const options = {
